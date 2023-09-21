@@ -1,0 +1,700 @@
+/* universal start */
+@font-face {
+  font-family: gentiumBasicItalic;
+  src: url(gentium-basic.italic.ttf);
+}
+@font-face {
+  font-family: sourceSansProBlack;
+  src: url(source-sans-pro.black.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Pridi", serif;
+}
+
+h1 {
+  font-family: sourceSansProBlack;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: gentiumBasicItalic;
+}
+
+/* universal end  */
+
+/* ================================= */
+/* -------------NAV  START---------- */
+/* ================================= */
+
+/* nav start  */
+/*top bar of idex page*/
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+  /* bottom: 0; */
+  background-color: blue;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/*don't know*/
+nav img {
+  color: red;
+  fill: black;
+  width: 40px;
+  height: auto;
+}
+/*The big words on the top right of the index page*/
+nav h5 a {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: red;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+/*The spacing of the letters on the top bar*/
+nav ul {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style-type: none;
+}
+/*The color of the letters on the top bar*/
+nav ul li a {
+  color: red;
+}
+/* ================================= */
+/* --------------NAV END------------ */
+/* ================================= */
+
+/* ================================= */
+/* ----------INDEX PAGE START------- */
+/* ================================= */
+
+/* Index landing page start */
+#main-landing-page {
+  position: relative;
+  padding: 40px;
+  background-image: url("https://elgarblog.files.wordpress.com/2014/01/education-books.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+/*The title, the big words on the front page*/
+#main-landing-page h1 {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  color: blue;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px red;
+}
+/*contorls the button*/
+.button5 {
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  border: none;
+  border-radius: 100px;
+  /*the background of the button before being hoverd over*/
+  background-color: green;
+  padding: 10px 60px;
+  /*it doesn't seem to do anything*/
+  color: yellow;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 4px 2px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+/*contorls the button when the mouse is on it i think*/
+.button5:hover {
+  /*the background of the button when the mouse is on it*/
+  background-color: orange;
+  /*it doesn't seem to do anything*/
+  color: black;
+}
+/* index landing page end  */
+
+/* ========================= */
+
+/* meet the team start*/
+.meet_the_team {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+.meet_the_team h2 {
+  font-size: 60px;
+  text-transform: capitalize;
+  padding: 40px 0;
+  /* padding: 10px 20px 15px 40px; */
+  /* top right bottom left */
+  /* top & bottom, left & right */
+}
+.meet_the_team .team_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.team_item {
+  display: inline-block;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team_item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center center;
+}
+/* meet the team end  */
+/* ================================= */
+/* -----------INDEX PAGE END-------- */
+/* ================================= */
+/* ================================= */
+/* ----------ABOUT PAGE START------- */
+/* ================================= */
+/* about landing start  */
+.about_landing {
+  background-image: url("https://api.time.com/wp-content/uploads/2021/10/GettyImages-577674005.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*The big button header*/
+.about_landing_header {
+  background-color: blue;
+  padding: 20px 100px;
+  /* border: 2px solid white; */
+  border-radius: 75px;
+}
+/*The writinig in the button*/
+.about_landing_header h1 {
+  color: red;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px red;
+}
+/* about landing end  */
+/* ================================= */
+/* about info start  */
+.about_us_info {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+.info_1,
+.info_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.info_content_1 h2,
+.info_content_2 h2 {
+  font-size: 60px;
+  text-transform: capitalize;
+}
+.info_content_1 p,
+.info_content_2 p {
+  font-size: 30px;
+  padding: 40px 0;
+}
+.info_images_1,
+.info_images_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.info_images_1 img {
+  width: 32%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+}
+.info_images_2 img {
+  width: 48%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center center;
+}
+/* about info end  */
+
+/* ================================= */
+/* -----------ABOUT PAGE END-------- */
+/* ================================= */
+/* ================================= */
+/* ----------CONTACT PAGE START------- */
+/* ================================= */
+/* contact landing start  */
+.contact_landing {
+  --s: 10px; /* control the size */
+  --c1: rgb(11, 111, 131, 1);
+  --c2: rgb(184, 0, 46, 1);
+
+  --c: #0000 46.46%, var(--c1) 0 53.53%, #0000 0;
+  --d: calc(10 * var(--s)) calc(10 * var(--s));
+  --g: /var(--d) conic-gradient(at 40% 40%, #0000 75%, var(--c1) 0);
+  background: conic-gradient(at 40% 40%, #0000 75%, var(--c2) 0)
+      calc(9 * var(--s)) calc(9 * var(--s)) / calc(5 * var(--s))
+      calc(5 * var(--s)),
+    calc(8 * var(--s)) calc(8 * var(--s)) var(--g),
+    calc(3 * var(--s)) calc(3 * var(--s)) var(--g),
+    linear-gradient(45deg, var(--c)) 0 0 / var(--d),
+    linear-gradient(-45deg, var(--c)) 0 0 / var(--d) var(--c2);
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_landing_header {
+  /*the button background color*/
+  background-color: blue;
+  padding: 20px 100px;
+  /* border: 2px solid white; */
+  border-radius: 75px;
+}
+.contact_landing_header h1 {
+  color: red;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px red;
+}
+/* contact landing end  */
+/* ================================= */
+/* contact input start */
+.contact_input {
+  width: 100%;
+  height: 120vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_input h2 {
+  font-size: 60px;
+  text-transform: capitalize;
+  padding: 40px 0;
+}
+.contact_input_form {
+  background-image: url("https://wordsrated.com/wp-content/uploads/2022/02/Number-of-Books-Published-Per-Year.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*the width of the image that is the background*/
+  width: 80%;
+  height: 60%;
+}
+.contact_input_form form {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.contact_input_form form label {
+  font-size: 25px;
+  /*controls the color of the words, email, message, etc*/
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 0;
+}
+.contact_input_form form input {
+  padding: 10px 5px;
+}
+/* contact input end  */
+
+/* ================================= */
+
+/* Kvothe Kaladin contact info start  */
+.KK_contact_info {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.KK_info_1 {
+  background-color: blue;
+  color: black;
+  width: 20032px;
+}
+.info_1a h5,
+.phone_number h5,
+.info_1c h5 {
+  font-size: 30px;
+}
+.info_1a p,
+.info_1b p,
+.info_1c p {
+  font-size: 20px;
+}
+.vc_info_2 ul {
+  display: flex;
+  flex-direction: row;
+}
+.vc_info_2 ul li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.pile_of_books_image img {
+  width: 200px;
+  height: auto;
+}
+.vc_info_1,
+.vc_info_2 {
+  width: 40%;
+  height: 40vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Kvothe Kaladin contact info end  */
+
+/* ================================= */
+/* ----------CONTACT PAGE END------- */
+/* ================================= */
+/* ================================= */
+/* -----------SHOP PAGE START------- */
+/* ================================= */
+.shop_landing {
+  background-image: url("https://api.time.com/wp-content/uploads/2021/10/GettyImages-577674005.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shop_landing_header {
+  background-color: blue;
+  padding: 20px 100px;
+  /* border: 2px solid white; */
+  border-radius: 75px;
+}
+.title {
+  color: red;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px red;
+}
+main h1 {
+  font-size: 120px;
+  font-weight: bolder;
+  color: black;
+}
+.shop {
+  padding: 40px;
+  width: 100%;
+  height: auto;
+}
+.shop_deals {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  padding: 20px;
+}
+.deal_item_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+.deal_item img {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+}
+  .shop_container {
+    /*the border*/
+  width: 100%; 
+  height: auto;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 50px 0;
+}
+.shop_search {
+  /*outside border around the search*/
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.search_input {
+  /*the size of the right box*/
+  width: 90%;
+}
+.search_input input {
+  width: 95%;
+  height: 100%;
+  padding: 10px;
+}
+.shop_items_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  /* gap: 5px; */
+  column-gap: 10px;
+  row-gap: 20px;
+  padding: 10px;
+}
+.shop_item {
+  border: 1px solid black;
+}
+.shop_item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+}
+/* ================================= */
+/* -------------SHOP PAGE END------- */
+/* ================================= */
+/* ================================= */
+/* ---------MEDIA QUERY START------- */
+/* ================================= */
+
+/* mobile view  */
+@media screen and (max-width: 426px) {
+  /* nav start */
+  nav {
+    background-color: greenyellow;
+  }
+  nav h5 {
+    display: none;
+  }
+  nav h5 a {
+    font-size: 12px;
+  }
+  nav ul {
+    width: 50%;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+  /* nav end  */
+
+  /* about page  */
+
+  /* about landing start */
+  .about_landing_header {
+    padding: 15px 40px;
+    border-radius: 120px;
+  }
+  .about_landing_header h1 {
+    font-size: 70px;
+  }
+  /* about landing end */
+
+  /* about us info start  */
+  .about_us_info {
+    padding: 20px;
+  }
+  .info_1,
+  .info_2 {
+    padding: 10px;
+  }
+  .info_content_1 h2,
+  .info_content_2 h2 {
+    font-size: 30px;
+  }
+  .info_content_1 p,
+  .info_content_2 p {
+    font-size: 18px;
+  }
+  .info_images_1,
+  .info_images_2 {
+    flex-direction: column;
+  }
+  .info_images_1 img {
+    width: 100%;
+    height: 260px;
+    margin: 10px 0;
+  }
+  .info_images_2 img {
+    width: 100%;
+    height: 300px;
+    margin: 10px 0;
+  }
+
+  /* about us info end  */
+  /* Index landing page start */
+  #main-landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  #main-landing-page h1 {
+    position: unset;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  #main-landing-page button a {
+    position: unset;
+    border: 1px solid white;
+  }
+  /* index landing page end  */
+
+  /* ========================= */
+
+  /* meet the team start*/
+  .meet_the_team {
+    padding: 20px;
+  }
+  .meet_the_team h2 {
+    font-size: 30px;
+  }
+  .meet_the_team .team_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    /* display: flex;
+  flex-wrap: wrap; */
+  }
+  .team_item img {
+    height: 300px;
+  }
+  /* meet the team end  */
+  /* About page end  */
+
+  /* contact page  */
+
+  /* contact landing start  */
+  .contact_landing_header {
+    padding: 15px 40px;
+    border-radius: 120px;
+  }
+  .contact_landing_header h1 {
+    font-size: 70px;
+  }
+  /* contact landing end  */
+  /* ================================= */
+  /* contact input start */
+  .contact_input {
+    height: 100vh;
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+  .contact_input h2 {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+  .contact_input_form {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact_input_form form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* contact input end  */
+
+  /* ================================= */
+
+  /* violet contact info start  */
+  .vc_contact_info {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .vc_info_1 {
+    background-color: blue;
+    color: white;
+  }
+  .info_1a h5,
+  .info_1b h5,
+  .info_1c h5 {
+    font-size: 25px;
+  }
+  .info_1a p,
+  .info_1b p,
+  .info_1c p {
+    font-size: 20px;
+  }
+  .vc_info_1,
+  .vc_info_2 {
+    width: 100%;
+    height: 50vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* contact page end  */
+  /* footer start  */
+  footer {
+    width: 100%;
+    height: auto;
+    /* background-color: black;
+    color: white; */
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  footer ul li {
+    list-style-type: none;
+    padding: 5px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+}
